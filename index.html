@@ -132,30 +132,55 @@
     <p id="searchResult"></p>
   </div>
   
-  <script>
-    function searchPage() {
-      var input = document.getElementById("searchInput").value.toLowerCase();
-      var found = window.find(input);
-  
-      if (found) {
-        document.getElementById("searchResult").textContent = "Término encontrado.";
-        document.getElementById("searchResult").style.display = "block";
-      } else {
-        document.getElementById("searchResult").textContent = "Término no encontrado.";
-        document.getElementById("searchResult").style.display = "block";
-      }
-    }
+  <scrip>
+   
   </script>
 
 
   <nav>
+    <!DOCTYPE html>
+<html>
+<head>
+
+
+
+  </style>
+</head>
+<body>
+  <h2 id="inicio">INICIO</h2>
+ 
+
+  <a href="#inicio" class="fixed-button back-to-inicio">Ir a INICIO</a>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+    <a href="#tema1">link de perfil </a> 
     <a href="#tema1">ESTADISTICA DESCRIPTIVA</a>
     <a href="#tema2">fUNDAMENTO DE LA TEORIA DE PROBABILIDAD</a>
     <a href="#tema3">VAR. ALEATORIAS</a>
     <a href="#tema4">DISTRIBUCIÓN</a>
     <a href="#tema5">REGRESIÓN LINEAL</a>
-    
+    <a href="#tema6">VIDEOS Y NOTEBOOK</a>
+
+   
   </nav>
+  <div class="topic" id="link de perfil">link de perfil
+
+    <a href="https://app.dataquest.io/profile/22011989">app.dataquest.io/profile/22011989/a>
+      <p></p>
+   
+
+  </div>
   
   <div class="topic" id="tema1">
     <h2>1. ESTADISTICA DESCRIPTIVA</h2>
@@ -338,11 +363,68 @@
             <td>
               <ul>
                 <li><b>Principio aditivo:</b>Es una técnica de conteo en probabilidad que mide cuántas maneras se puede realizar una actividad con varias alternativas, eligiendo solo una a la vez. Por ejemplo, al escoger una línea de transporte para ir de un lugar a otro.</li>
+                 <p><b>Formula:</b> <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+                  <div style="font-size: 15px;">
+                    <p>El principio aditivo de probabilidad establece que:</p>
+                    <p>Si A y B son eventos mutuamente excluyentes, entonces:</p>
+                    <p>P(A ∪ B) = P(A) + P(B)</p>
+                    <p>donde:</p>
+                    <p>P(A ∪ B) es la probabilidad de que ocurra A o B,</p>
+                    <p>P(A) es la probabilidad de que ocurra A,</p>
+                    <p>y P(B) es la probabilidad de que ocurra B.</p>
+                    <p></p>
+                  </div>
+                </div></p>
                 <li><b>principio multiplicativo:</b>Se utiliza para resolver problemas de conteo sin enumerar los elementos. Si una decisión (d1) puede tomarse de n maneras y otra decisión (d2) de m maneras, el número total de maneras en que pueden ser tomadas ambas decisiones es n * m.</li>
+                    <p><b>Formula:</b>
+                      <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+                        <div style="font-size: 16px;">
+                          <p>El principio multiplicativo de probabilidad establece que:</p>
+                          <p>Si A y B son eventos independientes, entonces:</p>
+                          <p>P(A ∩ B) = P(A) × P(B)</p>
+                          <p>donde:</p>
+                          <p>P(A ∩ B) es la probabilidad de que ocurran A y B,</p>
+                          <p>P(A) es la probabilidad de que ocurra A,</p>
+                          <p>y P(B) es la probabilidad de que ocurra B.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    
+                    </p>
                 <li><b>Notación Factorial:</b>Representa el producto de los primeros n números naturales. Se denota como n! y se calcula multiplicando todos los números desde 1 hasta n. Por ejemplo, 6! = 1 * 2 * 3 * 4 * 5 * 6 = 720.</li>
-                <li><b>ermutaciones</b>:Son formas de ordenar elementos en diferentes órdenes. No se pueden repetir y el orden importa. Por ejemplo, el orden de ganadores en una competencia.</li>
-                <li><p>Combinaciones:Seleccionan elementos de un grupo sin importar el orden. No se pueden repetir. Por ejemplo, elegir sabores de helado o ganadores en un podio.</p></li>
-                <li><p>Diagrama de Árbol:Representa posibles resultados en una secuencia de eventos. Útil para visualizar combinaciones y permutaciones.</p></li>
+                <p><b>Forumula:</b>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+                    <div style="font-size: 14px;">
+                      <p>El principio multiplicativo de probabilidad establece que:</p>
+                      <p>Si A y B son eventos independientes, entonces:</p>
+                      <p>P(A ∩ B) = P(A) × P(B)</p>
+                      <p>donde:</p>
+                      <p>P(A ∩ B) es la probabilidad de que ocurran A y B,</p>
+                      <p>P(A) = n! / (k! × (n-k)!) es la probabilidad de que ocurra A,</p>
+                      <p>y P(B) = m! / (l! × (m-l)!) es la probabilidad de que ocurra B.</p>
+                      <p>Aquí, n, k, m y l son los parámetros de las distribuciones de probabilidad de A y B.</p>
+                      <p></p>
+                    </div>
+                  </div></p>
+                <li><b>Permutaciones</b>:Son formas de ordenar elementos en diferentes órdenes. No se pueden repetir y el orden importa. Por ejemplo, el orden de ganadores en una competencia.</li>
+                   <p><b>Formula:</b>
+                    <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+                      <div style="font-size: 14px;">
+                        <p>El principio multiplicativo de probabilidad establece que:</p>
+                        <p>Si A y B son eventos independientes, entonces:</p>
+                        <p>P(A ∩ B) = P(A) × P(B)</p>
+                        <p>donde:</p>
+                        <p>P(A ∩ B) es la probabilidad de que ocurran A y B,</p>
+                        <p>P(A) = n<sub>A</sub>! / (k<sub>A</sub>! × (n<sub>A</sub>-k<sub>A</sub>)!) es la probabilidad de que ocurra A,</p>
+                        <p>y P(B) = n<sub>B</sub>! / (k<sub>B</sub>! × (n<sub>B</sub>-k<sub>B</sub>)!) es la probabilidad de que ocurra B.</p>
+                        <p>Aquí, n<sub>A</sub>, k<sub>A</sub>, n<sub>B</sub> y k<sub>B</sub> son los parámetros de las distribuciones de probabilidad de A y B.</p>
+                      </div>
+                    </div></p>
+                <li><p><b>Combinaciones:</b>Seleccionan elementos de un grupo sin importar el orden. No se pueden repetir. Por ejemplo, elegir sabores de helado o ganadores en un podio.</p></li>
+                <li><p><b>Diagrama de Árbol</b>:Representa posibles resultados en una secuencia de eventos. Útil para visualizar combinaciones y permutaciones.</p></li>
+                <div style="display: flex; justify-content: center; align-items: center; height: 300px;">
+                  <img src="https://th.bing.com/th/id/OIP.ahV-owkxZkk27yWJ94b8UAHaIV?w=163&h=185&c=7&r=0&o=5&pid=1.7" alt="Imagen de ejemplo" width="300" height="200">
+                </div>
                 <li><p>Teorema del Binomio:Relaciona el desarrollo de un binomio elevado a una potencia con los coeficientes binomiales. Es fundamental en la expansión de (a + b)^n.</p></li>
               </ul>
             </td>
@@ -354,14 +436,20 @@
                 <li><b>Definición de espacio muestral:</b> Es el conjunto de todos los posibles resultados de un experimento aleatorio. Por ejemplo, en el lanzamiento de un dado, el espacio muestral incluye los números del 1 al 6.</li>
                 <li><b>Definición de evento</b>Representa un suceso o resultado específico dentro del espacio muestral. Por ejemplo, obtener un número par al lanzar un dado. </li>
                 <li><b>Simbología:</b> Es el estudio de los símbolos, que transmiten significados a través del lenguaje visual. Por ejemplo, señales de tráfico en un aeropuerto.</li>
+                <div style="display: flex; justify-content: center; align-items: center; height: 300px;">
+                  <img src="https://1.bp.blogspot.com/-0aUWaaSK8Jk/XnA_Y_frCmI/AAAAAAAAAEE/OLJv7x34s1Y3JmBbLq89ATDmCgTuvgkQACLcBGAsYHQ/s640/Screenshot%2B%2528145%2529.png" alt="Imagen de ejemplo" width="300" height="200">
+                </div>
                 <li><b>Unión:</b>Es la combinación de elementos comunes a dos o más conjuntos. Por ejemplo, la unión de los conjuntos A y B incluye todos los elementos presentes en ambos conjuntos.</li>
                 <li><b>Intersección:</b>Es el conjunto de elementos compartidos por dos o más conjuntos. Por ejemplo, la intersección de los conjuntos A y B contiene solo los elementos presentes en ambos conjuntos.</li>
                 <li><b>Diagramas de Venn:</b>epresentan visualmente las relaciones entre conjuntos utilizando círculos superpuestos.</li>
+                <div style="display: flex; justify-content: center; align-items: center; height: 300px;">
+                  <img src="https://th.bing.com/th/id/OIP.a8t0PK9AAl7kdoKP8UkCdwHaGd?rs=1&pid=ImgDetMain" alt="Imagen de ejemplo" width="300" height="200">
+                </div>
               </ul>
             </td>
           </tr>
           <tr>
-            <td>3. Probabilidad con Técnicas de Conteo</td>
+            <td>Probabilidad con Técnicas de Conteo</td>
             <td>
               <ul>
                 <li><b>Axiomas:</b> Los axiomas son principios fundamentales o verdades evidentes que se aceptan sin necesidad de demostración. Forman la base de sistemas lógicos y matemáticos. En filosofía, pueden ser verdades incontrovertibles que guían el pensamiento y el razonamiento.
@@ -375,13 +463,16 @@
             <td>
               <ul>
                 <li><b>Dependiente:</b>Dos eventos son dependientes cuando la probabilidad de que suceda uno de ellos influye en la probabilidad de que ocurra el otro evento.</li>
-                <li><b>Independiente:</b></li>
+                <li><b>Independiente:</b>Dos eventos son independientes cuando la prbabilidad de que suceda uno influye en la probabilidad de que ocurra el evento.</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><p>Ley multiplicativa:</p></td>
             <td><li>Es una regla matemática que establece que el resultado de multiplicar dos o más números es igual a la multiplicación de cada número individualmente. Por ejemplo, si tenemos los números a y b, el resultado de multiplicarlos es igual a a x b</li></td>
+            <div style="display: flex; justify-content: center; align-items: center; height: 300px;">
+              <img src="https://th.bing.com/th/id/OIP.WZsXOEuKuSVHVe6s6sCMigAAAA?rs=1&pid=ImgDetMain" alt="Imagen de ejemplo" width="300" height="200">
+            </div>
           </tr>
           <tr>
             <td>Eventos independientes</td>
@@ -572,7 +663,166 @@
      </div>
   
   <div class="topic" id="tema6">
-    <h2>estadistica aplicada</h2>
-    <p>Por agregar </p>  </div>
+    <h2>Videos y notebook</h2>
+
+    <p></p>
+    <a href="http://127.0.0.1:5501/DatosAgrupados.html">
+      Tablas de frecuencia </a>
+      <p></p>
+   <p></p>
+  <a href="file:///C:/Users/marig/Downloads/Ejercicios_Tecnicas_De_Conteo.html">
+    Ejercicio de 7 al 9  </a>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Variables aleatorias discretas - YouTube</title>
+  <style>
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Variables aleatorias discretas - YouTube</h1>
+
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MRdfX9ZquXM?si=_2R2xDRkdbRVRTkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <p>Este es un video de YouTube sobre variables aleatorias discretas.</p>
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Probabilidad y estadística variables aleatorias - YouTube</title>
+  <style>
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Probabilidad y estadística variables aleatorias - YouTube</h1>
+
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F96HAvj-owI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <p>Este es un video de YouTube sobre probabilidad y estadística en relación con las variables aleatorias.</p>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Ejercicio 8 - YouTube</title>
+    <style>
+      .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      }
+  
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 8 - YouTube</h1>
+  
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ft8CACp03HE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  
+    <p>Este es un video de YouTube que muestra la resolución de un ejercicio.</p>
+
+    <!DOCTYPE html>
+   <!DOCTYPE html>
+<html>
+<head>
+  <title>Botones Fijos</title>
+  <style>
+    .fixed-button {
+      position: fixed;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    .back-to-top {
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    .back-to-tema1 {
+      top: 20px;
+      right: 20px;
+    }
+
+    .back-to-tema1:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenido de la página -->
+  <h1>Título de la página</h1>
+  <p>Párrafo 1</p>
+  <h2 id="tema1">Tema 1</h2>
+  <p>Contenido del Tema 1</p>
+  <p>Más contenido del Tema 1</p>
+  <h2 id="tema2">Tema 2</h2>
+  <p>Contenido del Tema 2</p>
+  <p>Más contenido del Tema 2</p>
+
+  <a href="#" class="fixed-button back-to-top">Ir al inicio</a>
+  <a href="#tema1" class="fixed-button back-to-tema1">Ir a Tema 1</a>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
+</html>
+</html>
+</body>
+</html>
+  </section>
+  </body>
 </html>
