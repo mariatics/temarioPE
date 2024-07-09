@@ -69,6 +69,50 @@
   <header>
     <h1>TEMARIO PROBABILIDAD Y ESTADISTICA</h1>
   </header>
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Botón Fijo</title>
+  <style>
+    .fixed-button {
+      position: fixed;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    .back-to-tema1 {
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .back-to-tema1:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="tema1">INICIO</h2>
+  
+
+  <a href="#tema1" class="fixed-button back-to-tema1">INICIO</a>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
 
 
 <script>
@@ -146,24 +190,7 @@
 
   </style>
 </head>
-<body>
-  <h2 id="inicio">INICIO</h2>
- 
 
-  <a href="#inicio" class="fixed-button back-to-inicio">Ir a INICIO</a>
-
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-</body>
-</html>
     <a href="#tema1">link de perfil </a> 
     <a href="#tema1">ESTADISTICA DESCRIPTIVA</a>
     <a href="#tema2">fUNDAMENTO DE LA TEORIA DE PROBABILIDAD</a>
@@ -174,10 +201,9 @@
 
    
   </nav>
-  <div class="topic" id="link de perfil">link de perfil
+  <a href="https://app.dataquest.io/profile/22011989">Link de perfil</a>
 
-    <a href="https://app.dataquest.io/profile/22011989">app.dataquest.io/profile/22011989/a>
-      <p></p>
+   
    
 
   </div>
@@ -795,18 +821,8 @@
   </style>
 </head>
 <body>
-  <!-- Contenido de la página -->
-  <h1>Título de la página</h1>
-  <p>Párrafo 1</p>
-  <h2 id="tema1">Tema 1</h2>
-  <p>Contenido del Tema 1</p>
-  <p>Más contenido del Tema 1</p>
-  <h2 id="tema2">Tema 2</h2>
-  <p>Contenido del Tema 2</p>
-  <p>Más contenido del Tema 2</p>
 
-  <a href="#" class="fixed-button back-to-top">Ir al inicio</a>
-  <a href="#tema1" class="fixed-button back-to-tema1">Ir a Tema 1</a>
+  
 
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
