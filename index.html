@@ -2,6 +2,55 @@
 <html>
 <head>
   <title>temario</title>
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Inicio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    .home-button:hover {
+      background-color: #45a049;
+    }
+    
+    .content {
+      padding: 20px;
+      text-align: center;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="home-button">Inicio</a>
+  
+  <div class="content">
+    <h1>Bienvenido a la Página de Inicio</h1>
+    
+  </div>
+</body>
+</html>
   <style>
     /* Estilos generales */
     body {
@@ -71,8 +120,6 @@
     <h1>TEMARIO PROBABILIDAD Y ESTADISTICA</h1>
   </header>
 
-
-   
   </script>
 
 
@@ -519,8 +566,63 @@
               <ul>
                 <li><strong>4.1 Función de probabilidad:</strong> La función de probabilidad describe la probabilidad de que una variable aleatoria tome cada uno de sus posibles valores. Es la representación matemática de la distribución de probabilidad.</li>
                 <li><strong>4.2 Distribución binomial:</strong> La distribución binomial modela el número de éxitos en un número fijo de ensayos independientes, donde cada ensayo tiene solo dos posibles resultados (éxito o fracaso) y la probabilidad de éxito es constante.</li>
+                  <p><b>Formula</b>
+                    <div style="text-align: center;">
+                      <p>
+                        La fórmula de la distribución binomial es:
+                      </p>
+                      <p>
+                        P(X = x) = C(n, x) * p^x * (1-p)^(n-x)
+                      </p>
+                      <p>
+                        Donde:
+                        <ul>
+                          <li>n es el número de ensayos</li>
+                          <li>x es el número de éxitos</li>
+                          <li>p es la probabilidad de éxito en cada ensayo</li>
+                          <li>C(n, x) es el coeficiente binomial, que se calcula como n! / (x! * (n-x)!)</li>
+                        </ul>
+                      </p>
+                    </div></p>
                 <li><strong>4.3 Distribución hipergeométrica:</strong> La distribución hipergeométrica modela el número de elementos de una clase particular en una muestra aleatoria sin reemplazo de una población finita.</li>
+               <p><b>Formula:</b>
+                <div style="text-align: center;">
+                  <p>
+                    La fórmula de la distribución hipergeométrica es:
+                  </p>
+                  <p>
+                    P(X = x) = (C(M, x) * C(N-M, n-x)) / C(N, n)
+                  </p>
+                  <p>
+                    Donde:
+                    <ul>
+                      <li>N es el tamaño de la población</li>
+                      <li>M es el número de elementos de interés en la población</li>
+                      <li>n es el tamaño de la muestra</li>
+                      <li>x es el número de elementos de interés en la muestra</li>
+                      <li>C(a, b) es el coeficiente binomial, que se calcula como a! / (b! * (a-b)!)</li>
+                    </ul>
+                  </p>
+                </div></p>
                 <li><strong>4.4 Distribución de Poisson:</strong> La distribución de Poisson modela el número de eventos que ocurren en un intervalo de tiempo o espacio dado, cuando estos eventos ocurren de manera independiente y a una tasa constante.</li>
+                <p><b>Formula:</b>
+                  <div style="text-align: center;">
+                    <p>
+                      La fórmula de la distribución de Poisson es:
+                    </p>
+                    <p>
+                      P(X = x) = e^(-λ) * (λ^x) / x!
+                    </p>
+                    <p>
+                      Donde:
+                      <ul>
+                        <li>λ (lambda) es la tasa media de ocurrencia del evento</li>
+                        <li>x es el número de ocurrencias del evento</li>
+                        <li>e es la constante matemática e (aproximadamente 2.718)</li>
+                        <li>x! es el factorial de x</li>
+                      </ul>
+                    </p>
+                  </div></p>
                 <li><strong>4.5 Distribución normal:</strong> La distribución normal, también conocida como distribución gaussiana, es una de las distribuciones de probabilidad más importantes y ampliamente utilizadas. Tiene forma de campana y es simétrica con respecto a su media.</li>
                 <li><strong>4.6 Distribución T-student:</strong> La distribución T-student es una distribución de probabilidad que se utiliza cuando se trabaja con muestras pequeñas y la desviación estándar de la población es desconocida.</li>
                 <li><strong>4.7 Distribución Chi cuadrada:</strong> La distribución Chi cuadrada se utiliza para modelar la suma de los cuadrados de variables aleatorias normales independientes estandarizadas.</li>
